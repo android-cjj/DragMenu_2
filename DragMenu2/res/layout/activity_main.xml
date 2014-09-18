@@ -1,0 +1,53 @@
+<com.cjj.dragmenu.DragMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dm"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cjj="http://schemas.android.com/apk/res/com.cjj.dragmenu"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    cjj:drag_menu_padding="50dp"
+    android:background="@drawable/mingren"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/layout_menu" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/jj" >
+            <com.cjj.dragmenu.CircleImageView
+                android:id="@+id/ibtn_icon1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                android:onClick="onClick"
+                android:src="@drawable/mingren1"
+                android:textColor="@android:color/white" />
+            
+             <com.cjj.dragmenu.CircleImageView
+                android:id="@+id/ibtn_icon2"
+                android:layout_width="35dp"
+                 android:layout_margin="10dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:singleLine="true"
+                 android:onClick="onClick"
+                android:src="@drawable/mingren1"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+        
+         <include layout="@layout/layout_menu" />
+        
+    </LinearLayout>
+
+</com.cjj.dragmenu.DragMenu>
